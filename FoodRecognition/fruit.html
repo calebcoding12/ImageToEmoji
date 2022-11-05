@@ -1,0 +1,79 @@
+
+<html>
+    <head>
+      <title>Food Recognition App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+  <h3 class="btn btn-success heading">FOOD RECOGNITION APP
+    <br>
+    <span>&#127815;</span>
+    <span>&#127817;</span>
+    <span>&#127816;</span>
+    <span>&#127818;</span>
+    <span>&#127819;</span>
+    <span>&#127820;</span>
+    <span>&#127822;</span>
+  </h3>
+        <br><br>
+    <p style="font-size: 25px;">Take a photo of a gesture to generate the emoji!</p>
+        <p style="font-size: 22px;">This app is trained to guess the following fruits!-
+            <br>
+            <span>&#127819;</span>
+            <span>&#127817;</span>
+            <span>&#127818;</span>
+            <span>&#127822;</span>
+            <span>&#127820;</span>
+            <br>
+          <b style="color: rgb(251, 255, 0)">| Lemon |</b>
+          <br>
+          <b style="color: rgb(255, 0, 0)">| Apple |</b>
+          <br>
+          <b style="color: rgb(255, 153, 0)">| Orange |</b>
+          <br>
+          <b style="color: rgb(92, 206, 26)">| Watermelon |</b>
+          <br>
+          <b style="color: rgb(223, 231, 112)">| Banana |</b>
+          <br>
+        </p>
+  <div class="col-md-4 col-sm-12 col-xs-12">
+    <label class="lbl-design">Webcam View -</label>
+    <div id="camera"></div>
+    <br><br>
+    <button onclick="take_snapshot()" class="button">Capture Image</button>
+  </div>
+  <div class="col-md-4 col-sm-12 col-xs-12">
+    <label class="lbl-design">Prediction -</label>
+    <p class="emotion_name" id="result_emotion_name"></p>
+    <p class="emoji" id="update_emoji"></p>
+    
+  </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label class="lbl-design">Snapshot -</label>
+  <div id="result"></div>
+          <br><br>
+  <button onclick="check()" class="button">Predict Food</button>
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
